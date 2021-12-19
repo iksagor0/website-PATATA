@@ -1,0 +1,368 @@
+/* ====== For iPad Pro 12" - 1024px ======*/
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 98%;
+    }
+
+
+    #reservations .food_images img {
+        margin-right: 2rem;
+    }
+
+    #reservations .food_images img:last-child {
+        margin-right: 3rem;
+    }
+
+}
+
+
+
+/* ======== For Tablet - 980px ======== */
+@media only screen and (max-width: 980px) {
+    #home h1 {
+        font-size: 8rem;
+    }
+
+    .nav_bar ul li {
+        margin: 0 .7rem;
+    }
+
+    .nav_bar ul li a {
+        font-size: 1.9rem;
+    }
+}
+
+
+
+
+/* For Tablet - 900px */
+@media only screen and (max-width: 900px) {
+    #header {
+        padding: 10px;
+    }
+
+    #header.sticky {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    #header.sticky img {
+        display: none;
+    }
+
+    /* ======== Navbar Customization ======== */
+    .nav_bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+
+    .nav_bar.sidebar {
+        right: 0;
+    }
+
+    .nav_bar ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 15rem;
+    }
+
+    .nav_bar ul li {
+        display: block;
+    }
+
+    .nav_bar ul li a {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    .nav_bar ul li a i {
+        color: #dab33e;
+        font-size: 45px;
+        margin: 10px 20px;
+    }
+
+    button.side-btn {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 25px;
+        border: 0;
+        outline: 0;
+        border: 1px solid #000;
+        z-index: 9999999;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .side-btn.changed #close {
+        display: block;
+    }
+
+    .side-btn.changed #open {
+        display: none;
+    }
+
+    button.side-btn:focus {
+        border: 0;
+        outline: 0;
+    }
+
+    /* ======== Navbar Customization End======== */
+
+    .nav_bar ul li {
+        padding: 0 .5rem;
+    }
+
+    #reservations .food_images img {
+        max-width: 18rem;
+        margin-right: 2rem;
+    }
+
+    .inner_footer {
+        padding: 3rem;
+    }
+
+    #footer .content_area {
+        width: 29%;
+    }
+
+    #footer .about_content {
+        width: 36%;
+    }
+}
+
+
+
+/* ========= For iPad Pro 10.5" - 850px ======= */
+@media only screen and (max-width: 850px) {
+
+    .container {
+        width: 99%;
+        padding: 10rem 5rem;
+    }
+
+    .inner_header {
+        padding: 0 .5rem;
+    }
+
+    #home h1 {
+        font-size: 7rem;
+    }
+
+    .nav_bar ul li {
+        margin: 0 .2rem;
+    }
+
+    #ingredients .wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+
+
+    #reservations .food_images img {
+        max-width: 16rem;
+    }
+
+    .inner_footer {
+        padding: 3rem;
+    }
+}
+
+
+
+
+
+/* ========= iPad VIEW - 800px ======= */
+@media only screen and (max-width: 800px) {
+
+    #reservations .food_images img {
+        max-width: 25rem;
+        margin-right: 5rem;
+    }
+
+    #reservations .food_images img:last-child {
+        display: none;
+    }
+
+    #reservations .contact .contact_item {
+        width: 100%;
+    }
+
+    #reservations .contact label {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+/* ========= SMALL TAB VIEW - 700px ======= */
+@media only screen and (max-width: 700px) {
+    #home .btn a {
+        margin: 0 1rem;
+    }
+
+    .btn a {
+        padding: 1.8rem 3rem;
+    }
+
+    #ingredients .wrapper {
+        width: 100%;
+    }
+
+    #footer img {
+        max-width: 17rem;
+        margin: 1.5rem 0;
+    }
+}
+
+
+
+/* ========= OLD SMALL TAB VIEW - 600px ======= */
+@media only screen and (max-width: 600px) {
+    #reservations .food_images img {
+        max-width: 22rem;
+        margin-right: 3rem;
+    }
+
+    #home .btn a {
+        margin: 1rem 1rem;
+    }
+
+    .nav_bar ul li a {
+        font-size: 35px;
+        line-height: 66px;
+    }
+
+    .nav_bar ul li a i {
+        font-size: 48px;
+        margin: 10px 10px;
+    }
+}
+
+
+
+
+
+/* ===================================
+            MOBILE VIEW - 600px 
+===================================== */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    #home .wrapper {
+        width: 90%;
+        text-align: center;
+    }
+
+    #home h1 {
+        line-height: 7rem;
+        font-size: 5rem;
+    }
+
+    #home .hero_btn a {
+        margin: 0 auto 2rem;
+        display: block;
+        width: 20rem;
+        height: 6rem;
+        padding-top: 2rem;
+    }
+
+    #ingredients .wrapper h2 {
+        padding-top: 2rem;
+    }
+
+    #ingredients .ingredients_images img {
+        width: 7rem;
+        margin: 0 1rem 7rem;
+    }
+
+    .menu_category {
+        width: 90%;
+        margin: auto;
+    }
+
+    #menu .main_dishes {
+        margin-top: 0;
+    }
+
+
+    #reservations .wrapper {
+        flex-wrap: wrap;
+    }
+
+    #reviews .wrapper p {
+        line-height: 2.5rem;
+    }
+
+    #reservations .food_images {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #reservations .food_images img {
+        max-width: 48%;
+        margin: 0 0 3rem 0;
+        margin-right: 0;
+    }
+
+    #reservations .food_images img:last-child {
+        display: block;
+        margin-right: 0;
+    }
+
+    #reservations form {
+        width: 80%;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    #reservations .contact input {
+        width: 100%;
+        height: 4.6rem;
+    }
+
+    #reservations .contact label {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    #footer .footer_wrapper {
+        flex-wrap: wrap;
+    }
+
+    #footer .content_area {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #footer .content_area:last-child {
+        margin-bottom: 20px;
+    }
+
+    #footer img {
+        max-width: 13rem;
+    }
+
+    #footer .social_media {
+        width: 70%;
+        margin: auto;
+    }
+}

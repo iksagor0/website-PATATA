@@ -1,0 +1,559 @@
+/* ==========================================
+            COMMON CSS
+============================================= */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ==========================================
+            COMMON CSS
+============================================= */
+section,
+header,
+footer {
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    max-width: 115rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10rem;
+}
+
+.btn a {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    padding: 2rem 5rem;
+    transition: .3s;
+    border: 1px solid #fff;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.btn a:hover {
+    background: #cc9900;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+img[alt="divider"] {
+    width: 23rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    color: #cc9900;
+    font-size: 3.6rem;
+    font-family: 'Yeseva One', cursive;
+}
+
+p.description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ==========================================
+            HEADER AREA CSS
+============================================= */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#header.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.459);
+}
+
+button.side-btn {
+    display: none;
+}
+
+#header.sticky img {
+    width: 7rem;
+}
+
+#header.sticky .nav_bar ul {
+    margin-top: 2.5rem;
+}
+
+.inner_header {
+    overflow: hidden;
+    padding: 0;
+}
+
+.logo_area {
+    float: left;
+}
+
+.logo_area img {
+    width: 14rem;
+}
+
+.nav_bar {
+    float: right;
+}
+
+.nav_bar ul {
+    text-align: right;
+    margin-top: 5rem;
+}
+
+.nav_bar ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.nav_bar ul .active {
+    color: #cc9602;
+}
+
+.nav_bar ul li a {
+    color: #fff;
+    font-size: 2.1rem;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: bold;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    padding: .2rem .4rem;
+}
+
+.nav_bar ul li a:hover,
+.nav_bar ul li a:active {
+    color: #c89f2d;
+}
+
+.nav_bar ul li:active {
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+.nav_bar ul li a i {
+    color: #dab33e;
+    margin: 0 .1rem;
+    padding: .1rem .2rem;
+}
+
+.nav_bar ul .nav_social_icons a:hover i {
+    color: rgb(230, 231, 175);
+}
+
+
+/* ==========================================
+            HOME AREA CSS
+============================================= */
+#home {
+    height: 100vh;
+    background: url(img/bg_hero.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.inner_home {
+    clear: both;
+    padding: 0;
+}
+
+#home .wrapper {
+    max-width: 97rem;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    margin-top: 5rem;
+}
+
+#home h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-family: 'Yeseva One';
+    margin: 0;
+}
+
+#home img {
+    width: 23rem;
+    margin: 3rem 0;
+}
+
+#home .btn a {
+    margin: 0 1.5rem;
+}
+
+
+/* ==========================================
+            ABOUT AREA CSS
+============================================= */
+#about {
+    background: url(img/bg_about.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.inner_about {
+    overflow: hidden;
+}
+
+#about .wrapper {
+    float: left;
+    max-width: 43rem;
+}
+
+
+#about .wrapper img[alt="cook"] {
+    width: 22rem;
+    margin-top: 5rem;
+}
+
+
+
+/* ==========================================
+         INGREDIENTS AREA CSS
+============================================= */
+#ingredients {
+    background: url(img/bg_igredients.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.inner_ingredients {
+    overflow: hidden;
+}
+
+#ingredients .wrapper {
+    width: 57rem;
+    background: rgba(0, 0, 0, 0.6);
+    float: right;
+}
+
+#ingredients .wrapper h2 {
+    color: #fff;
+    margin-top: 8rem;
+}
+
+#ingredients .wrapper p {
+    color: #fff;
+    max-width: 43rem;
+    margin: 1.5rem auto 7rem;
+}
+
+#ingredients .ingredients_images img {
+    width: 10rem;
+    margin: 0 1.4rem 7rem;
+    opacity: .8;
+}
+
+
+
+
+/* ==========================================
+         MENU AREA CSS
+============================================= */
+#menu {
+    background: url(img/bg_menu.jpg);
+    background-size: cover;
+}
+
+.inner_hero {
+    overflow: hidden;
+}
+
+#menu .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu_category {
+    width: 43%;
+}
+
+#menu h3 {
+    color: #c89f2d;
+    font-size: 2.1rem;
+    font-family: 'Yeseva One', cursive;
+}
+
+#menu .item_list {
+    margin: 1rem 0 6rem;
+}
+
+#menu h3.item_name {
+    float: left;
+}
+
+#menu h3.item_price {
+    text-align: right;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+#menu p.description {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+#menu .main_dishes {
+    margin-top: -11.6rem;
+}
+
+#menu .salads .item_list,
+#menu .main_dishes .item_list {
+    margin: 1rem 0 0;
+}
+
+
+
+
+/* ==========================================
+         REVIEWS AREA CSS
+============================================= */
+#reviews {
+    background: url(img/bg_reviews.jpg) center;
+    background-size: cover;
+}
+
+.inner_reviews {
+    overflow: hidden;
+}
+
+#reviews .wrapper {
+    max-width: 77rem;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#reviews h2 {
+    color: #fff;
+    padding-top: 8rem;
+}
+
+#reviews .wrapper p b {
+    font-size: 8rem;
+    font-family: Georgia;
+}
+
+#reviews .wrapper p {
+    max-width: 63rem;
+    color: #dde0df;
+    margin: 0 auto;
+    font-size: 2.3rem;
+    line-height: 4.5rem;
+    font-family: 'Gentium Book Basic', serif;
+    word-spacing: 4px;
+}
+
+#reviews .wrapper p.description {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    padding: 2rem 0 10rem;
+}
+
+
+
+
+/* ==========================================
+         RESERVATIONS AREA CSS
+============================================= */
+#reservations {
+    background: url(img/bg_reservations.jpg) center;
+    background-size: cover;
+}
+
+.inner_reservations {
+    overflow: hidden;
+    padding: 10rem 10rem 10rem 5rem;
+}
+
+#reservations .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reservations .food_images {
+    display: flex;
+}
+
+#reservations .food_images img {
+    max-width: 24rem;
+    margin-right: 2.5rem;
+}
+
+
+
+#reservations .reservation_content {
+    max-width: 43rem;
+
+}
+
+#reservations .reservation_content p {
+    color: #4c4c4c;
+    padding-bottom: 4rem;
+}
+
+
+
+#reservations .contact {
+    text-align: left;
+    color: #c9a131;
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#reservations .contact .contact_item {
+    width: 46%;
+}
+
+#reservations .name {
+    float: left;
+}
+
+#reservations .email {
+    float: right;
+}
+
+#reservations .date {
+    float: left;
+}
+
+#reservations .number {
+    float: right;
+}
+
+#reservations .contact label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+#reservations .contact input {
+    width: 100%;
+    height: 3.6rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    font-style: italic;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+}
+
+#reservations .contact input:focus {
+    border: 1px solid #c89f2d;
+    outline: 0;
+}
+
+#reservations .btn input {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    background: #c89f2d;
+    color: #fff;
+    cursor: pointer;
+}
+
+#reservations .btn input:hover {
+    background: rgb(27, 109, 27);
+}
+
+
+
+
+/* ==========================================
+         FOOTER AREA CSS
+============================================= */
+#footer {
+    background: #000;
+    color: #fff;
+}
+
+.inner_footer {
+    overflow: hidden;
+    padding: 5rem;
+}
+
+#footer .footer_wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .content_area {
+    width: 32%;
+}
+
+#footer h5 {
+    font-size: 2.1rem;
+    font-family: 'Yeseva One', cursive;
+}
+
+#footer img {
+    width: 20rem;
+    margin: 1.5rem 0;
+}
+
+#footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+#footer i {
+    font-size: 2.5rem;
+    margin: 1rem .5rem 0;
+}
+
+#footer i:hover {
+    color: #c89f2d;
+}
